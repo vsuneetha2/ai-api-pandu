@@ -5,7 +5,7 @@ api=Flask(_name_)
 
 with open('ai.pkl','rb') as f:
     ai=pickle.load(f)
-
+    
 @api.route('/')
 def home():
     return "API Server Running"
